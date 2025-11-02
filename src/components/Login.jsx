@@ -25,7 +25,6 @@ const Login = () => {
           withCredentials: true,
         }
       )
-      console.log(loginResponse)
       dispatch(addUser(loginResponse.data.data))
       return navigate('/')
     } catch (error) {
